@@ -1,0 +1,12 @@
+<div id="modal-content-wrapper" *ngFor="let comment of comments">
+    <h5>Email: {{comment.email}}</h5>
+    <h2 mat-dialog-title>Title: {{comment.name}}</h2>
+<mat-dialog-content>{{comment.body}}</mat-dialog-content>
+
+</div>
+
+<mat-dialog-actions>
+<button mat-button [mat-dialog-close]="true">Close</button>
+</mat-dialog-actions>
+
+
